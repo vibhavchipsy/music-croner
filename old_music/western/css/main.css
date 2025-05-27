@@ -1,0 +1,466 @@
+/*
+------------------------------------------------
+[Table of contents]
+
+ 0.Reset
+ 1.Global
+ 2.Layout
+ 3.text container
+ A. inner page 
+ 5.footer
+ 6.CSS Support
+
+------------------------------------------------*/
+
+/**
+ * 0.RESET 
+ */
+@import "reset.css";
+/**
+ * 1.GLOBAL
+ */
+body {
+	background: #fff;
+	color: #424343;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 75%;
+	line-height:15px;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/bg.jpg);
+}
+ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 22px;
+	color: #dd6d1c;
+	line-height:normal;
+	font-weight: normal;
+	font-weight:bold;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+h2 {
+	font-size:16px;
+	color:#5a5858;
+	line-height:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+h3 {
+	font-size: 15px;
+	color:#3d3e3f;
+	line-height:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	margin:0;
+	font-weight:bold;
+}
+h4 {
+	font-size:13px;
+	line-height: normal;
+	color: #00CCCD;
+}
+h5 {
+	font-size: 24px;
+	color: #363636;
+}
+h6 {
+	font-size:1.2em;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin:0px;
+	color:#000;
+}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+	margin: 0;
+}
+p {
+	font-size: 12px;
+	margin: 0;
+	line-height:20px;
+	vertical-align: text-top;
+	text-align:left;
+	color:#383838;
+}
+p a:link {
+	text-decoration: none;
+	color:#084260;
+	font-size: 1.1em;
+}
+p a:visited {
+	text-decoration: none;
+	color:#084260;
+	font-size: 1.1em;
+}
+p a:hover {
+	text-decoration: underline;
+	color:#084260;
+	font-size: 1.1em;
+ transition-duration: .5s;
+ -o-transition-duration: .5s;
+ -moz-transition-duration: .5s;
+ -webkit-transition-duration: .5s;
+}
+p a:active {
+	text-decoration: none;
+	color:#3D61A4;
+	font-size: 1.1em;
+}
+a:link, a:visited {
+	color:  #fff;
+	outline: none;
+	text-decoration: none;
+}
+a:focus {
+	outline:none;
+}
+a:hover, a:active {
+	color: #014d9a;
+	outline: none;
+	text-decoration: underline;
+}
+br {
+	margin:0px;
+	padding:0px;
+	line-height:15px;
+}
+img {
+	vertical-align: text-bottom;
+	vertical-align:middle;
+}
+/* Common Styling */
+li ul, li ol, .block li ul {
+	margin: 0;
+}
+li {
+	line-height:20px;
+	padding:0;
+	margin:0;
+}
+ul, ol, .block ul {
+	margin: 0 1.5em 1.5em 0;
+	padding: 0 0 0 1.5em;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+dl {
+	margin: 0 0 1.5em 0;
+}
+dl dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 1.5em;
+}
+table {
+	margin-bottom: 1.5em;
+	width:100%;
+}
+th, tr, td {
+	padding: 0.1em 0.5em;
+	vertical-align: middle;
+}
+hr {
+	background: #666;
+	border: none;
+	clear: both;
+	float: none;
+	height: 1px;
+	margin: -1px 0 1.5em;
+	width: 100%;
+}
+fieldset {
+	border: 1px solid #ccc;
+	margin: .5em 0;
+	padding: 1em;
+}
+/**
+ * 2.LAYOUT
+ */
+
+#wrapper {
+	width:100%;
+	min-height:600px;
+	margin: 0 auto;
+	padding: 0px;
+	
+}
+#wrapper_inner {
+	width:100%;
+	min-height:619px;
+	margin: 0 auto;
+	padding: 0px;
+	background-image: url(../images/header_bg.png);
+	background-repeat:repeat-x;
+	background-position:top;
+}
+#container {
+	width:960px;
+	min-height:619px;
+	margin: 0 auto;
+	padding: 0px;
+}
+#wrapper_header {
+	width:960px;
+	height:81px;
+	margin: 0 auto;
+	padding: 0px;
+}
+#logo_wrap {
+	width:255px;
+	height:48px;
+	position: relative;
+	padding-top:10px;
+	float: left;
+}
+#menu_wrap {
+	width:470px;
+	height:49px;
+	position:relative;
+	float: right;
+	margin-top:32px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image:url(../images/menu_bg.jpg);
+	background-repeat:repeat-x;
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+}
+#wrapper_body {
+	width:960px;
+	min-height:515px;
+	margin: 0 auto;
+	padding: 0px;
+	position:relative;
+	float:none;
+	background-color:#FFF;
+}
+#shadow {
+	width:960px;
+	height:11px;
+	position:relative;
+	float:none;
+	margin:auto;
+	background-image:url(../images/shadow_19.png);
+	background-repeat:repeat-x;
+}
+#wrapper_footer {
+	width:100%;
+	min-height:33px;
+	background-color:#30b2d1;
+	margin: 0 auto;
+	position:relative;
+	background-image:url(../images/footer_bg.jpg);
+	background-repeat:repeat-x;
+}
+/* 3.menu */
+#navlist {
+	width:460px;
+	height:49px;
+	position:relative;
+	float:left;
+	padding-left:10px;
+}
+ul#navlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+}
+ul#navlist li {
+	height:49px;
+	float: left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+}
+#navlist a, #navlist a:link {
+	height:49px;
+	margin: 0;
+	display:block;
+	line-height:49px;
+	padding: 0px 12px 0px 12px;
+	margin-right:2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	}
+ul#navlist li#active {
+	color: #95bbae;
+	background-color: #deebe5;
+	text-decoration:none
+}
+#navlist a:hover {
+	color: #fff;
+	background-color: #dd6d1c;
+	text-decoration:none;
+}
+#navlist #current {
+	color: #fff;
+	text-decoration:none;
+	background-color: #dd6d1c;
+	text-decoration:none;
+}
+/* 3.text container */
+
+#columns_left {
+	width:490px;
+	min-height:515px;
+	position:relative;
+	float: left;
+}
+#columns_right {
+	width:430px;
+	min-height:475px;
+	position:relative;
+	float: right;
+	padding:20px;
+}
+.text ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.text li {
+	list-style: url(../images/arrow.jpg);
+	line-height:25px;
+	margin:0;
+	padding:0;
+}
+iframe {
+            position: relative;
+            top: 0; left: 0; 
+            border: none;
+			 padding-top: 0px;
+			padding-right:0px;
+		    box-sizing: border-box;
+			-moz-box-sizing: border-box; 
+		 -webkit-box-sizing: border-box;
+        }
+.columns_clr{
+	background-color: #E5E5E5;
+}
+
+/**
+ * 8.Footer
+ */
+ #footer {
+	width:960px;
+	height:20px;
+	padding-top:10px;
+	position:relative;
+	float:none;
+	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+#footer_menu {
+	width:400px;
+	height:20px;
+	position:relative;
+	float:left;
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+#footer_menu a:link {
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+#footer_menu a:visited {
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+#footer_menu a:hover {
+	font-size:12px;
+	color:#fff;
+	font-weight:bold;
+}
+#footer_menu a:active {
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+
+#footer_copy {
+	width:350px;
+	height:20px;
+	position:relative;
+	float:right;
+	text-align:right;
+	color:#000;
+}
+/**
+ * 8.CSS SUPPORT
+ */
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user.
+ */
+.element-hidden {
+	display: none;
+}
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ * "!important" is used to prevent unintentional overrides.
+ */
+.element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+/**
+ * The .element-focusable class extends the .element-invisible class to allow
+ * the element to be focusable when navigated to via the keyboard.
+ */
+.element-invisible.element-focusable:active, .element-invisible.element-focusable:focus {
+	position: static !important;
+	clip: auto;
+}
+/**
+ * Markup free clearing.
+ *
+ * @see http://perishablepress.com/press/2009/12/06/new-clearfix-hack
+ */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {
+	height: 1%;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+	min-height: 1%;
+}
+.line {
+	border-bottom:solid 1px #cccbcb;
+}
