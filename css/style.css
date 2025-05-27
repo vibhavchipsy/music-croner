@@ -3142,3 +3142,7 @@ div:hover>.small-round-icon {
 		margin-bottom: 12px;
 	}
 }
+
+.hide-all {
+	display: none;
+}

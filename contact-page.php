@@ -78,7 +78,7 @@
 									
 						</div>
 							<div class="col-sm-6">
-								<div class="contact">
+								<div class="contact hide-all">
 									<div class="icon"><i class="fa fa-phone"></i></div>
 									<div class="inner">0820 2535450</div>
 								</div> <!-- end .contact -->

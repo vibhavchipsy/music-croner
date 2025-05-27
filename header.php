@@ -62,7 +62,7 @@
 					</div>  <!-- end .header-contact -->
 					<div class="header-contact" style="line-height: 58px; !important">
 						<div class="small-round-icon"><i class="fa fa-phone"></i></div>
-						+91 9845147478 / +917838290497
+						+91 9845147478
 					</div>  
 					 <!-- end .header-contact -->
 					<!--<nav class="top-nav">
